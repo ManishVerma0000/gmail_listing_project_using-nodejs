@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Gmail Listing</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/6.5.95/css/materialdesignicons.min.css"
+		rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+</head>
+
+<body onload="abc()">
+	<div id="main-wrapper">
+		<header class="topbaar">
+			<div class="container">
+				<div class="logosection">
+					<div class="d-flex justify-content-between">
+						<div class="logobrand">
+							<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+						</div>
+						<ul class="navbar-nav adminProfile">
+							<li class="nav-item">
+								<a href="#" class="d-flex nav-link dropdown-toggle clickShowmenu">
+									<span class="profileImg"><img src="assets/images/avatar.jpg"></span>
+									<span class="proName">Gmail Listing</span>
+								</a>
+								<ul class="profiledropdown">
+									<li class="nav-item"><a class="nav-link" href="#!">Profile</a></li>
+									<li class="nav-item"><a class="nav-link" href="#!">Settings</a></li>
+									<li class="nav-item"><a class="nav-link"
+											href="http://localhost:3000/login">Logout</a></li>
+								</ul>
+							</li>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	</header>
+
+
+	<div class="main_page">
+		<div class="container">
+
+
+
+			<div class="row mt-4">
+				<div class="col-xl-12 col-lg-12 col-md-12">
+					<div class="card  p-4">
+
+
+						<!-- *********************** -->
+						<div class="hidePopup" id="s1">
+							<div class="bg-white maintabssaction">
+								<!-- <button id="btn1">click here</button> -->
+								<div class="tab-content " id="myTabContent">
+									<div class="tab-pane fade active show" id="faq_tab_1" role="tabpanel"
+										aria-labelledby="faq_tab_1-tab">
+										<div class="container">
+
+											<div class="row">
+												<div class="col-md-12">
+													<div class="card maimpopupbox">
+														<!-- Tab panes -->
+														<div class="tab-content">
+															<button onclick="fetAllData()"
+																style="font-size: 20px; width: 10%;">All</button>
+															<button onclick="fetAllData()"
+																style="font-size: 20px; width: 10%;">People</button>
+															<button onclick="fetAllData()"
+																style="font-size: 20px; width: 10%;">company</button>
+															<div id="home" class="container tab-pane active">
+
+																<div class="carousel-wrap">
+																	<div class="owl-carousel" id="headername">
+																		<div class="item">
+																			<button id="headdata"
+																				onclick="fetchselecteddata()"></button><span
+																				class="totlegmail">32</span>
+																		</div>
+																		<!-- <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														    <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														    <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														    <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														    <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														    <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														    <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														    <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														    <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														    <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														    <div class="item">Abhishek <span class="totlegmail">23</span></div>
+														  </div> -->
+																	</div>
+
+																</div><!-- End Container -->
+																<div id="menu1" class="container tab-pane fade"><br>
+																	<h3>Menu 1</h3>
+																	<p>Ut enim ad minim veniam, quis nostrud
+																		exercitation ullamco laboris nisi ut aliquip ex
+																		ea commodo consequat.</p>
+																</div>
+																<div id="menu2" class="container tab-pane fade"><br>
+																	<h3>Menu 2</h3>
+																	<p>Sed ut perspiciatis unde omnis iste natus error
+																		sit voluptatem accusantium doloremque
+																		laudantium, totam rem aperiam.</p>
+																</div>
+															</div>
+															<!-- ****************Tabs************** -->
+														</div>
+													</div>
+
+
+
+												</div>
+
+												<!--  -->
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+
+							</div><!-- End popup -->
+
+
+
+						</div><!-- End of card -->
+						<div class="col-md-8">
+							<!-- <div class="text-center viewmoreGmail">
+	        			<a href="#!" class="button-34">View More</a>
+	        		</div> -->
+							<div class="subjecttable">
+								<table class="table table-bordered">
+									<thead class="headerBgcolor">
+										<tr>
+											<th>Subject</th>
+											<th>Date</th>
+										</tr>
+									</thead>
+									<tbody id="list">
+										<tr>
+											<td>Lorem Ipsum has been the industrys.</td>
+											<td>27/04/2022</td>
+										</tr>
+										<tr>
+											<td>Lorem Ipsum has been the industrys.</td>
+											<td>27/04/2022</td>
+										</tr>
+										<tr>
+											<td>Lorem Ipsum has been the industrys.</td>
+											<td>27/04/2022</td>
+										</tr>
+										<tr>
+											<td>Lorem Ipsum has been the industrys.</td>
+											<td>27/04/2022</td>
+										</tr>
+										<tr>
+											<td>Lorem Ipsum has been the industrys.</td>
+											<td>27/04/2022</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	<footer class="card p-4 mt-5 text-center ">
+		<span>Copyright © 2022 Gmail Listing All rights reserved.</span>
+	</footer>
+
+	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 10,
+			nav: true,
+			navText: [
+				"<i class='mdi mdi-chevron-left'></i>",
+				"<i class='mdi mdi-chevron-right'></i>"
+			],
+			autoplay: true,
+			autoplayHoverPause: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 3
+				},
+				1000: {
+					items: 6
+				}
+			}
+		})
+
+
+
+		/***********Profile clickShowmenu*************/
+		$(document).ready(function () {
+			$(".clickShowmenu").click(function () {
+				$(".profiledropdown").toggle();
+			});
+		});
+
+		$(document).ready(function () {
+			$('.payBtn').on('click', function () {
+				$('.payBtn').removeClass('active');
+				$(this).toggleClass('active');
+			});
+		});
+/***********paymentOptions**********/
+	</script>
+
+	<script type="text/javascript">
+		var state = 1;
+		$("#toggleButton").click(function () {
+			//alert(state);
+			if (state == 1) {
+				$("#s1").hide();
+				$("#s2").show();
+				state++;
+			} else if (state == 2) {
+				$("#s2").hide();
+				$("#s3").show();
+				state++;
+			} else if (state == 3) {
+				$("#s3").hide();
+				$("#s4").show();
+				state++;
+			} else if (state == 4) {
+				$("#s4").hide();
+				$("#s5").show();
+				state++;
+			} else if (state == 5) {
+				$("#s5").hide();
+				$("#s6").show();
+				$("#toggleButton").hide();
+
+			}
+			/*$("#"+state++).toggle();*/
+			if (state === 7) { state = 1; }
+		});
+	</script>
+	<script>
+
+
+
+		const fetAllData = () => {
+			fetch("http://localhost:3000/alldataofemail",
+				{ method: "GET" }).then((data) => {
+					return data.json();
+				}).then((objectdata) => {
+
+					console.log(objectdata)
+
+					let tabledata = "";
+					objectdata.map((values) => {
+						tabledata +=
+							`<tr>
+								<td class="tablebody">${values.subject}</td>
+								<td>${values.date}</td>
+							</tr>	`
+					})
+					document.getElementById("list").innerHTML = tabledata;
+				}).catch((error) => {
+					console.log(error)
+				});
+		}
+		var values;
+		const abc = () => {
+
+			fetch("http://localhost:3000/headername",
+				{
+					method: "GET"
+				}).then((data) => {
+					return data.json()
+				}).then((objectdata) => {
+					console.log(objectdata, 'objdata');
+
+					let tabledata = "";
+					objectdata.map((values) => {
+						tabledata +=
+							`<div class="item"><button id="manish" onclick="fetchselecteddata(${values.name})" value='values.name'>${values.name}</button><span class="totlegmail">${values.occurrence}</span></div>`
+					})
+
+					document.getElementById("headername").innerHTML = tabledata;
+
+				}).catch((error) => {
+					console.log(error)
+					res.send(error);
+				})
+		}
+
+		// const fetchselecteddata= ()=>{
+		// 	alert("hellloo");
+		// 	var name;
+		// 	name= document.getElementById("headdata").textContent;
+		// 	console.log(name);
+		// }
+
+
+
+
+		const fetchselecteddata = (name) => {
+			alert(name)
+			var name= document.getElementById("headdata").innerHTML;
+			console.log(name);
+			var name = document.getElementById("manish")
+
+			fetch("http://localhost:3000/alldataofemail",
+				{ method: "GET" }).then((data) => {
+					return data.json();
+				}).then((objectdata) => {
+					console.log(objectdata)
+					let tabledata = "";
+					objectdata.map((values) => {
+						if (name === values.name) {
+							tabledata +=
+								`<tr>
+									<td class="tablebody">${values.subject}</td>
+									<td>${values.date}</td>
+								</tr>`
+						}
+					})
+					document.getElementById("list").innerHTML = tabledata;
+				}).catch((error) => {
+					console.log(error)
+				});
+		}
+
+	</script>
+	<!-- <script>
+	function fetchselecteddata(){
+		alert("hellloo");
+		
+		var name= document.getElementById("headdata").textContent;
+		console.log(name);
+	}
+</script> -->
+
+</body>
+
+</html>

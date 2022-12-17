@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Gmail Listing</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+</head>
+<body>
+<div id="main-wrapper">
+	<header class="topbaar">
+		<div class="container">
+			<div class="logosection">
+				<div class="d-flex justify-content-between">
+					<div class="logobrand">
+						<a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+					</div>
+					<ul class="navbar-nav adminProfile">
+						<li class="nav-item">
+							<a href="#" class="d-flex nav-link dropdown-toggle clickShowmenu">
+								<span class="profileImg"><img src="assets/images/avatar.jpg"></span>
+								<span class="proName"> Gmail Listing</span>
+							</a>
+						<ul class="profiledropdown">
+							<li class="nav-item"><a class="nav-link" href="#!">Profile</a></li>
+							<li class="nav-item"><a class="nav-link" href="#!">Settings</a></li>
+							<li class="nav-item"><a class="nav-link" href="#!">Logout</a></li>
+						</ul>
+					</li>
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</header>
+
+<!-- ENd off Header -->
+
+<div class="main_page">
+	<div class="container">
+		<div class="row mt-5 justify-content-center">
+        	<div class="col-md-10">
+        		<div class="text-center loginButton">
+        			<a href="http://localhost:3000/dashboard" class="button-34">LogIn with gmail</a>
+        		</div>
+        	</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+
+
+<footer class="card p-4 mt-5 text-center loginFooter">
+	<span>Copyright © 2022  Gmail Listing All rights reserved.</span>
+</footer>
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	/***********Profile clickShowmenu*************/
+	$(document).ready(function(){
+	  $(".clickShowmenu").click(function(){
+	    $(".profiledropdown").toggle();
+	  });
+	});   
+/***********Profile clickShowmenu*************/
+</script>
+</body>
+</html>
+
